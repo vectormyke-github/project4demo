@@ -94,8 +94,8 @@ $ . ./make_prediction.sh # Don't forget run the container before
 
 $ docker ps
 
-CONTAINER ID        IMAGE                                               COMMAND                CREATED              STATUS              PORTS                                   NAMES
-056eea11f5da        gsimondocker/udacity-devops-ml-ms-kubernetes        "python app.py         5 minutes ago        Up to 5 minutes     0.0.0.0/8000->80, :::8000->80/tcp       competent_ride
+CONTAINER ID   IMAGE                                   COMMAND           CREATED              STATUS              PORTS                                   NAMES
+93ebcada2216   vectormyke/myke-devops-ml-ms-kubelets   "python app.py"   About a minute ago   Up About a minute   0.0.0.0:8000->80/tcp, :::8000->80/tcp   awesome_zhukovsky 
 
     Note: Don't forget copy the output to docker_out.txt
 
@@ -170,5 +170,3 @@ Don't use 80 as a port. e.g: kubectl run app --image=$dockerpath --port=80 you c
     Don't forget update the make_prediction.sh script to use the same port as you are using to run the docker app (with or without kubernetes)
 
 
-
-Thank You All!
